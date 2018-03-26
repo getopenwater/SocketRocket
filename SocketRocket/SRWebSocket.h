@@ -260,7 +260,7 @@ extern NSString *const SRHTTPResponseErrorKey;
 /**
  https://github.com/facebook/SocketRocket/issues/562
  */
-- (void)_failWithError:(NSError *)error;
+- (void)_failWithError:(nullable NSError *)error;
 
 ///--------------------------------------
 #pragma mark Send
