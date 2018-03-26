@@ -556,7 +556,7 @@ NSString *const SRHTTPResponseErrorKey = @"HTTPResponseStatusCode";
     }];
 }
 
-- (void)_failWithError:(NSError *)error;
+- (void)_failWithError:(NSError *)error
 {
     dispatch_async(_workQueue, ^{
         if (self.readyState != SR_CLOSED) {

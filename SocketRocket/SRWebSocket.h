@@ -257,6 +257,11 @@ extern NSString *const SRHTTPResponseErrorKey;
  */
 - (void)closeWithCode:(NSInteger)code reason:(nullable NSString *)reason;
 
+/**
+ https://github.com/facebook/SocketRocket/issues/562
+ */
+- (void)_failWithError:(NSError *)error;
+
 ///--------------------------------------
 #pragma mark Send
 ///--------------------------------------
